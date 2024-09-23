@@ -1,0 +1,12 @@
+.thread-title-margins {
+    margin-top: 9%;
+    position: fixed; /* Fix the navbar to the top */
+    top: 0; /* Align it to the top of the page */
+    left: 0; /* Align to the left side of the page */
+    right: 0; /* Align to the right side of the page */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.thread-content {
+    margin-top: 35%;
+}
