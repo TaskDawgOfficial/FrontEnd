@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import TopNavbar from '../TopNavBar/TopNavBar';
 import BottomNavbar from '../BottomNavBar/BottomNavBar';
 import { Image } from 'react-bootstrap'; // Optional, you can use regular img if you prefer
+import { useNavigate } from 'react-router-dom';
 
 import "./Thread.css"
 
@@ -66,8 +67,12 @@ const Thread = () => {
         },
       ]);
 
-    const handleAcceptClick = () => {
+    // To navigate to the thread
+    const navigate = useNavigate();
+
+    const handleAcceptClick = (title) => {
         setIsAccepted(true);
+        navigate('/taskStatusPage', { state: { title } });
     };
 
     return (
@@ -81,7 +86,7 @@ const Thread = () => {
                     {/* Accept Button */}
                     {!isAccepted && (
                     <button
-                        onClick={handleAcceptClick}
+                        onClick={() => handleAcceptClick('Help Wabuffet take CSE 455 notes for an Amazon referral')}
                         className="mt-4 p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
                     >
                         Accept Task
