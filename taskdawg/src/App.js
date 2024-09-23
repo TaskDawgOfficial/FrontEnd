@@ -1,7 +1,9 @@
 // App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import AskerHomePage from "./Components/AskerHomePage/AskerHomePage"
+import HelperHomePage from "./Components/HelperHomePage/HelperHomePage"
+import HelperSearchPage from './Components/HelperSearchPage/HelperSearchPage';
+import HelperProfilePage from './Components/HelperProfilePage/HelperProfilePage';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -10,7 +12,9 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path="/" element={<AskerHomePage />} />
+          <Route path="/" element={<HelperHomePage />} />
+          <Route path="/helperSearchPage" element={<HelperSearchPage />} />
+          <Route path="/helperProfilePage" element={<HelperProfilePage />} />
         </Routes>
       </div>
     </Router>

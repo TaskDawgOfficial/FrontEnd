@@ -3,9 +3,9 @@ import BottomNavbar from '../BottomNavBar/BottomNavBar';
 import TopNavbar from '../TopNavBar/TopNavBar';
 import { Card, Row, Col } from 'react-bootstrap';
 
-import "./AskerHomePage.css"
+import "./HelperHomePage.css"
 
-function AskerHomePage() {
+function HelperHomePage() {
     return (
         <div>
             <TopNavbar></TopNavbar>
@@ -51,4 +51,4 @@ function AskerHomePage() {
     );
 }
 
-export default AskerHomePage;
+export default HelperHomePage;

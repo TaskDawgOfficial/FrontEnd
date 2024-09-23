@@ -7,7 +7,7 @@ const BottomNavbar = () => {
     <nav className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300">
       <ul className="flex justify-around items-center">
         <li className="m-3 text-center">
-          <a href="#" className="flex flex-col items-center">
+          <a href="/" className="flex flex-col items-center">
             <img
               src="home.png"
               alt="Home"
@@ -16,7 +16,7 @@ const BottomNavbar = () => {
           </a>
         </li>
         <li className="m-3 text-center">
-          <a href="#" className="flex flex-col items-center">
+          <a href="/helperSearchPage" className="flex flex-col items-center">
             <img
               src="work.png"
               alt="Search"
@@ -25,7 +25,7 @@ const BottomNavbar = () => {
           </a>
         </li>
         <li className="m-3 text-center">
-          <a href="#" className="flex flex-col items-center">
+          <a href="/helperProfilePage" className="flex flex-col items-center">
             <img
               src="husky.png"
               alt="Profile"
