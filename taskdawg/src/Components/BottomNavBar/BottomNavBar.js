@@ -5,8 +5,8 @@ import './BottomNavBar.css'
 const BottomNavbar = () => {
   return (
     <nav className="fixed bottom-0 left-0 w-full bg-white border-t border-gray-300">
-      <ul className="flex justify-around items-center py-2">
-        <li className="m-5 text-center">
+      <ul className="flex justify-around items-center">
+        <li className="m-3 text-center">
           <a href="#" className="flex flex-col items-center">
             <img
               src="home.png"
@@ -15,7 +15,7 @@ const BottomNavbar = () => {
             />
           </a>
         </li>
-        <li className="m-5 text-center">
+        <li className="m-3 text-center">
           <a href="#" className="flex flex-col items-center">
             <img
               src="work.png"
@@ -24,7 +24,7 @@ const BottomNavbar = () => {
             />
           </a>
         </li>
-        <li className="m-5 text-center">
+        <li className="m-3 text-center">
           <a href="#" className="flex flex-col items-center">
             <img
               src="husky.png"

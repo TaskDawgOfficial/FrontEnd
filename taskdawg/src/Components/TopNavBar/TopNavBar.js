@@ -29,7 +29,7 @@ const TopNavbar = () => {
 
       {/* Right Side - Button with Image and Circular Border */}
       <div className="flex items-center">
-        <button className="border-2 border-black rounded-full">
+        <button className="border-2 border-black rounded-full hover:bg-blue-500 hover:border-gray-500">
           <img
             src="profile_icon.png"
             alt="Profile"
