@@ -5,9 +5,9 @@ import BottomNavbar from '../BottomNavBar/BottomNavBar';
 import { Image } from 'react-bootstrap'; // Optional, you can use regular img if you prefer
 import { useNavigate } from 'react-router-dom';
 
-import "./Thread.css"
+import "./ThreadPage.css"
 
-const Thread = () => {
+const ThreadPage = () => {
     const location = useLocation();
     const { title, date } = location.state || {}; // Destructure the passed state
 
@@ -159,4 +159,4 @@ const Thread = () => {
     );
 };
 
-export default Thread;
+export default ThreadPage;
