@@ -111,7 +111,7 @@ const ThreadPage = () => {
             </div>
 
             {/* Threading body */}
-            <div className="max-w-3xl mx-auto mt-6 p-4 bg-white rounded-md shadow-md">
+            <div className="thread-bottom-margin max-w-3xl mx-auto mt-6 p-4 bg-white rounded-md shadow-md">
                 <div className="space-y-4">
                     {threadMessages.map((msg) => (
                     <div key={msg.id} className="border p-4 rounded-md bg-gray-50">
